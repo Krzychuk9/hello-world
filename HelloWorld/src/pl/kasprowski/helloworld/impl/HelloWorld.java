@@ -3,11 +3,15 @@ package pl.kasprowski.helloworld.impl;
 public class HelloWorld {
 	private static final String HELLO_WORLD = "hello world";
 	
-	private Integer age;
+	// http://www.tutorialspoint.com/java/java_object_classes.htm
 	
-	public HelloWorld(Integer age) {
+	private Integer age;
+	private int height; 
+	
+	public HelloWorld() {
 		super();
-		this.age = age;
+		age = new Integer(0);
+		height = 0;
 	}
 
 	public void printHelloWorld() {
@@ -22,5 +26,20 @@ public class HelloWorld {
 		System.out.println("hello " + name + "your age is " + age);
 	}
 
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Integer getHeight() {
+		return height;
+	}
+
+	public void setHeight(Integer height) {
+		this.height = height;
+	}
+	
 }
-// static import
