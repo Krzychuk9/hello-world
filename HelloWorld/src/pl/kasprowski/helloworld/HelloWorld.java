@@ -1,6 +1,7 @@
 package pl.kasprowski.helloworld;
 
 public class HelloWorld {
+	private static final String HELLO_WORLD = "hello world";
 
 	public static void main(String[] args) {
 		HelloWorld hello = new HelloWorld();
@@ -9,7 +10,7 @@ public class HelloWorld {
 	}
 
 	public void printHelloWorld() {
-		System.out.println("hello world!!");
+		System.out.println(HELLO_WORLD);
 	}
 
 	public void printHelloName(String name) {
