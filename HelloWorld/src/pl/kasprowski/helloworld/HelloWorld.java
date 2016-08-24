@@ -3,6 +3,12 @@ package pl.kasprowski.helloworld;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		System.out.println("hello world!!");
+		HelloWorld hello = new HelloWorld();
+		hello.printHelloWorld();
+	}
+	
+	public void printHelloWorld() {
+		System.out.println("hello world!!");		
 	}
 }
+// static import
