@@ -1,12 +1,13 @@
-package pl.kasprowski.helloworld;
+package pl.kasprowski.helloworld.impl;
 
 public class HelloWorld {
 	private static final String HELLO_WORLD = "hello world";
-
-	public static void main(String[] args) {
-		HelloWorld hello = new HelloWorld();
-		hello.printHelloWorld();
-		hello.printHelloName("gruby");
+	
+	private Integer age;
+	
+	public HelloWorld(Integer age) {
+		super();
+		this.age = age;
 	}
 
 	public void printHelloWorld() {
@@ -16,5 +17,10 @@ public class HelloWorld {
 	public void printHelloName(String name) {
 		System.out.println("hello " + name);
 	}
+	
+	public void printHelloNameWithAge(String name) {
+		System.out.println("hello " + name + "your age is " + age);
+	}
+
 }
 // static import
