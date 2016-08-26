@@ -13,6 +13,8 @@ public class HelloWorld {
 		age = new Integer(0);
 		height = 0;
 	}
+	
+	
 
 	public void printHelloWorld() {
 		System.out.println(HELLO_WORLD);
