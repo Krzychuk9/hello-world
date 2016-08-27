@@ -2,10 +2,10 @@ package pl.kasprowski.turtorials.impl3;
 
 public class Employee {
 	
-	String name;
-	int age;
-	String designation;
-	double salary;
+	private String name;
+	private int age;
+	private String designation;
+	private double salary;
 	
 	public Employee(String name){
 		this.name = name;
