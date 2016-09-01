@@ -2,6 +2,8 @@ package pl.kasprowski.turtorials.impl10;
 
 public class InstanceMethodsForCharacterSubClasses {
 	public static void main(String[] args) {
+		Character a = new Character('a');
+		Character b = 'b'; //to samo!
 		
 		System.out.println(Character.isLetter('a'));
 		System.out.println(Character.isLetter('5') + "\n"); //sprawdza czy wartoœæ jest liter¹
