@@ -6,11 +6,11 @@ public class Cat {
 
 	private String name;
 	private Date birthDayDate = new Date();
-	private Double weight;
+	private Double weight = 0.0;
 	private String keeperName;
 
 	public String Introduce() {
-		return name + birthDayDate + weight + keeperName;
+		return "Name : " + name + "birth day date: " + birthDayDate + "weight: " + weight + "kepper name: " + keeperName;
 	}
 
 	public void setName(String name) {
@@ -20,9 +20,17 @@ public class Cat {
 	public void setBirthDayDate(Date birthDayDate) {
 		this.birthDayDate = birthDayDate;
 	}
-
+	
+	public Date getBirthDayDate(){
+		return birthDayDate;
+	}
+	
 	public void setWeight(Double weight) {
 		this.weight = weight;
+	}
+	
+	public Double getWeight() {
+		return weight;
 	}
 
 	public void setKeeperName(String keeperName) {
