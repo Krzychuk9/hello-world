@@ -4,21 +4,22 @@ import java.util.*;
 import java.util.regex.*;
 import java.text.*;
 
-import pl.kasprowski.turtorials2.impl01.Cat;
+import pl.kasprowski.turtorials2.impl01.*;
 
 public class InputDataDemo2 {
 	static Scanner cin = new Scanner(System.in);
 	static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 	private static String regex1 = "\\d+(\\.\\d+)?";
 	private static String regex2 = "\\d{4}-[0-1]?\\d{1}-[0-3]?\\d{1}";
-
+	static CatDAO cats = new CatDAO();
+		
 	public static String getData() {
 		return cin.nextLine().trim();
 	}
 
 	public static void main(String[] args) {
 		Cat cat = new Cat();
-
+		
 		System.out.println("Podaj imiê kota: ");
 		cat.setName(getData());
 
@@ -54,5 +55,7 @@ public class InputDataDemo2 {
 		} while (cat.getWeight() == 0.0);
 
 		System.out.println(cat.getWeight());
+		
+		cats.addCat(cat);
 	}
 }
