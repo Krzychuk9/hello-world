@@ -10,6 +10,11 @@ public class CatDAO {
 	
 	public void addCat (Cat cat){
 		cats.add(cat);
-		System.out.println("Cat added to collection.");
+		System.out.println("Cat added to collection.\n");
 	}
+
+	public List<Cat> getCats() {
+		return cats;
+	}
+
 }

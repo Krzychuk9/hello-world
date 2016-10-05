@@ -10,11 +10,15 @@ public class Cat {
 	private String keeperName;
 
 	public String Introduce() {
-		return "Name : " + name + "birth day date: " + birthDayDate + "weight: " + weight + "kepper name: " + keeperName;
+		return "Name : " + name + " Birth day date: " + birthDayDate + " Weight: " + weight + " Kepper name: " + keeperName;
 	}
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getName(){
+		return name;
 	}
 
 	public void setBirthDayDate(Date birthDayDate) {
