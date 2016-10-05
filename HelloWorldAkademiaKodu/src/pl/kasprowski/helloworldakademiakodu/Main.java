@@ -1,24 +1,23 @@
 package pl.kasprowski.helloworldakademiakodu;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int number = 5;
-		int age = 20;
+
+		int numberOfFriends = 550;
 		String name = "Micha³";
 
-		System.out.println("Hello World");
-		System.out.println(number);
+		int age = Integer.parseInt(JOptionPane.showInputDialog("Podaj wiek"));
+
+		JOptionPane.showMessageDialog(null, "HELLO WORLD " + name);
 
 		if (age >= 18) {
-			System.out.println("Jesteœ pe³noletni");
+			JOptionPane.showMessageDialog(null, "Jesteœ pe³noletni");
 		} else {
-			System.out.println("Jetseœ dzieciakiem");
+			JOptionPane.showMessageDialog(null, "Jesteœ dzieckiem");
 		}
-
-		Scanner scaner = new Scanner(System.in);
-
 	}
+
 }
