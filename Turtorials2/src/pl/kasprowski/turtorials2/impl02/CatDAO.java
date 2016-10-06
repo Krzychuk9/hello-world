@@ -1,8 +1,8 @@
-package pl.kasprowski.turtorials2.impl01;
+package pl.kasprowski.turtorials2.impl02;
 
 import java.util.*;
-
 import pl.kasprowski.turtorials2.impl01.*;
+
 
 public class CatDAO {
 	

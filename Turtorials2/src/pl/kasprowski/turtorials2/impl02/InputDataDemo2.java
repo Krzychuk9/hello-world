@@ -3,8 +3,8 @@ package pl.kasprowski.turtorials2.impl02;
 import java.util.*;
 import java.util.regex.*;
 import java.text.*;
-
 import pl.kasprowski.turtorials2.impl01.*;
+
 
 public class InputDataDemo2 {
 	static Scanner cin = new Scanner(System.in);
